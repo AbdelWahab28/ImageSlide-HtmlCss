@@ -1,0 +1,59 @@
+body{
+    background-color:#c3c3c3;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+ li{
+   
+    text-align: center;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+a{
+    color: navy;
+    font-size: 30px;
+    text-decoration: underline;
+    list-style: none;
+
+}
+
+a:hover{
+    color: yellow;
+}
+
+.slide figure img{
+    width: 20%;
+    float: left;
+}
+
+.slide figure{
+    position: relative;
+    width: 500%;
+    -webkit-animation: 10s ease sliderleft infinite;
+}
+
+.slide{
+    max-width: 1000px;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 20px solid white;
+}
+
+@-webkit-keyframes sliderleft{
+    0%{ left: 0%;}
+    20%{ left: 0%;}
+    25%{ left: -100%;}
+    45%{ left: -100%;}
+    50%{ left: -200%;}
+    70%{ left: -200%;}
+    75%{ left: -300%;}
+     95%{ left: -300%;}
+     100%{ left: -400%;}
+}
